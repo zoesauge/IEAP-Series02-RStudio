@@ -1,6 +1,6 @@
 ---
-title: "IEAP - Rstudio Series 02: Upper Limb Non-Use after Stroke"
-author: "Zoe Sauge"
+title: "IEAP - Rstudio Series 02"
+author: "Zoe Sauge, Elouan DEFFIN, Tuba"
 date: last-modified
 date-format: "DD MMMM YYYY, HH:mm:ss"
 format:
