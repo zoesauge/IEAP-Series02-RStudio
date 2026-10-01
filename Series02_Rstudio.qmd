@@ -59,3 +59,10 @@ summary(prepost)
 ```{r}
 count(prepost, time)
 ```
+
+The dataset contains 16 observations: 8 measurements before rehabilitation and 8 measurements after rehabilitation. The variable time identifies the measurement period (Before or After), while perf represents the measured performance variable.
+
+| Variable | Description | Unit | Possible values | Expected change |
+|---------------|---------------|---------------|---------------|---------------|
+| perf | Cardiac rehabilitation performance score; the exact test/measure is not specified in the assignment materials | Not specified (likely arbitrary or composite score) | 125–148 observed in this dataset | Expected to improve after rehabilitation |
+| time | Measurement period | Categorical | Before / After | Not applicable |
