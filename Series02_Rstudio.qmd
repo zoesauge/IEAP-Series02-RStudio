@@ -1,0 +1,19 @@
+---
+title: "IEAP - Rstudio Series 02: Upper Limb Non-Use after Stroke"
+author: "Zoe Sauge"
+date: last-modified
+date-format: "DD MMMM YYYY, HH:mm:ss"
+format:
+  typst:
+    papersize: a4
+    margin:
+      x: 1.5cm
+      y: 1.2cm
+    fontsize: 9.5pt
+---
+
+## Statistical tests: comparison of medians (or means?)
+
+### Make clear what is a statistical test, and when to use it.
+
+**What is a median? A mean?** The mean is the sum of all values divided by their number, and the median is the middle value once the data are sorted. *Reference: Field, A. (2013). Discovering Statistics Using IBM SPSS Statistics, Chapter 2.*
