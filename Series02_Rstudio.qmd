@@ -25,3 +25,6 @@ format:
 **What is a statistical test?** A statistical test uses sample data to decide whether there is enough evidence to reject a null hypothesis, by computing a p-value. *Reference: STHDA - Statistical Tests and Assumptions*
 
 **When to use a statistical test?** A statistical test is used to know whether a result observed on a sample is likely real or due to random sampling variation. *Reference: STHDA - Statistical Tests and Assumptions*
+
+**What is a parametric test? A non-parametric test?** A parametric test assumes a specific distribution of the data (usually normal), whereas a non-parametric test makes no such assumption and typically works on ranks. *Reference: STHDA - Non-parametric Tests*
+
