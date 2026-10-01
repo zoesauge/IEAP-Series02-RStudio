@@ -28,3 +28,6 @@ format:
 
 **What is a parametric test? A non-parametric test?** A parametric test assumes a specific distribution of the data (usually normal), whereas a non-parametric test makes no such assumption and typically works on ranks. *Reference: STHDA - Non-parametric Tests*
 
+**What are the assumptions of parametric tests?** Parametric tests generally assume normally distributed data, independent observations and, for group comparisons, equal variances. *Reference: Field, A. (2013). Discovering Statistics Using IBM SPSS Statistics, Chapter 5.*
+
+**What are the assumptions of non-parametric tests?** Non-parametric tests mainly assume independent observations and data that can be ranked. *Reference: STHDA - Non-parametric Tests*
