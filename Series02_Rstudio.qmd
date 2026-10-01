@@ -52,3 +52,7 @@ prepost <- read_csv("data/PrePost.csv")
 
 glimpse(prepost)
 ```
+```{r}
+summary(prepost)
+```
+
