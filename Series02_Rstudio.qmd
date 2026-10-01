@@ -35,3 +35,5 @@ format:
 **What is a p-value?** The p-value is the probability of obtaining a result at least as extreme as the one observed if the null hypothesis is true. *Reference: STHDA - Statistical Tests and Assumptions*
 
 **What is the risk of error when using a statistical test?** A Type I error is a false positive (risk usually set at α = 0.05), and a Type II error is a false negative, often due to low statistical power. *Reference: Field, A. (2013). Discovering Statistics Using IBM SPSS Statistics, Chapter 2.*
+
+**What is the difference between a paired and an unpaired test?** A paired test compares two measurements from the same subjects, whereas an unpaired test compares two independent groups. *Reference: STHDA - t-test Formula*
