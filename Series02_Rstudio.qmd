@@ -21,3 +21,7 @@ format:
 **What is a variance? A standard deviation?** The variance is the average squared deviation from the mean, and the standard deviation is its square root, expressed in the same unit as the data. *Reference: Field, A. (2013). Discovering Statistics Using IBM SPSS Statistics, Chapter 2.*
 
 **What is a normal distribution?** A normal distribution is a symmetric, bell-shaped distribution in which most values cluster around the mean. *Reference: STHDA - Normality Test in R*
+
+**What is a statistical test?** A statistical test uses sample data to decide whether there is enough evidence to reject a null hypothesis, by computing a p-value. *Reference: STHDA - Statistical Tests and Assumptions*
+
+**When to use a statistical test?** A statistical test is used to know whether a result observed on a sample is likely real or due to random sampling variation. *Reference: STHDA - Statistical Tests and Assumptions*
