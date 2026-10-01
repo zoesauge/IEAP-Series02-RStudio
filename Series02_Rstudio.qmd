@@ -79,3 +79,7 @@ ggplot(prepost, aes(x = time, y = perf)) +
     y = "Performance"
   )
 ```
+
+```{r}
+prepost
+```
