@@ -83,3 +83,12 @@ ggplot(prepost, aes(x = time, y = perf)) +
 ```{r}
 prepost
 ```
+
+```{r}
+before <- prepost$perf[prepost$time == "Before"]
+after <- prepost$perf[prepost$time == "After"]
+
+difference <- after - before
+
+difference
+```
