@@ -56,3 +56,6 @@ glimpse(prepost)
 summary(prepost)
 ```
 
+```{r}
+count(prepost, time)
+```
