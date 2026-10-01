@@ -31,3 +31,5 @@ format:
 **What are the assumptions of parametric tests?** Parametric tests generally assume normally distributed data, independent observations and, for group comparisons, equal variances. *Reference: Field, A. (2013). Discovering Statistics Using IBM SPSS Statistics, Chapter 5.*
 
 **What are the assumptions of non-parametric tests?** Non-parametric tests mainly assume independent observations and data that can be ranked. *Reference: STHDA - Non-parametric Tests*
+
+**What is a p-value?** The p-value is the probability of obtaining a result at least as extreme as the one observed if the null hypothesis is true. *Reference: STHDA - Statistical Tests and Assumptions*
