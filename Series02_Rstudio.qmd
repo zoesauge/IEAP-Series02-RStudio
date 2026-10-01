@@ -92,3 +92,9 @@ difference <- after - before
 
 difference
 ```
+
+```{r}
+shapiro.test(difference)
+```
+
+A paired t-test was used because the same participants were measured before and after rehabilitation. The distribution of the paired differences did not show evidence of departure from normality according to the Shapiro-Wilk test (p = 0.283).
