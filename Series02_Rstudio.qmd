@@ -1,6 +1,6 @@
 ---
-title: "IEAP - Rstudio Series 02: Upper Limb Non-Use after Stroke"
-author: "Zoe Sauge"
+title: "IEAP - Rstudio Series 02"
+author: "Zoe Sauge, Elouan DEFFIN, Tuba"
 date: last-modified
 date-format: "DD MMMM YYYY, HH:mm:ss"
 format:
@@ -12,9 +12,9 @@ format:
     fontsize: 9.5pt
 ---
 
-## Statistical tests: comparison of medians (or means?)
+## 2. Statistical tests: comparison of medians (or means?)
 
-### Make clear what is a statistical test, and when to use it.
+### 2.1 Make clear what is a statistical test, and when to use it.
 
 **What is a median? A mean?** The mean is the sum of all values divided by their number, and the median is the middle value once the data are sorted. *Reference: Field, A. (2013). Discovering Statistics Using IBM SPSS Statistics, Chapter 2.*
 
@@ -37,3 +37,71 @@ format:
 **What is the risk of error when using a statistical test?** A Type I error is a false positive (risk usually set at α = 0.05), and a Type II error is a false negative, often due to low statistical power. *Reference: Field, A. (2013). Discovering Statistics Using IBM SPSS Statistics, Chapter 2.*
 
 **What is the difference between a paired and an unpaired test?** A paired test compares two measurements from the same subjects, whereas an unpaired test compares two independent groups. *Reference: STHDA - t-test Formula*
+
+## 2.2 Effect of treatment over time
+
+### 2.2.1 The data 
+
+```{r}
+library(tidyverse)
+```
+
+
+```{r}
+prepost <- read_csv("data/PrePost.csv")
+
+glimpse(prepost)
+```
+```{r}
+summary(prepost)
+```
+
+```{r}
+count(prepost, time)
+```
+
+The dataset contains 16 observations: 8 measurements before rehabilitation and 8 measurements after rehabilitation. The variable time identifies the measurement period (Before or After), while perf represents the measured performance variable.
+
+| Variable | Description | Unit | Possible values | Expected change |
+|---------------|---------------|---------------|---------------|---------------|
+| perf | Cardiac rehabilitation performance score; the exact test/measure is not specified in the assignment materials | Not specified (likely arbitrary or composite score) | 125–148 observed in this dataset | Expected to improve after rehabilitation |
+| time | Measurement period | Categorical | Before / After | Not applicable |
+
+### 2.2.2 The analysis
+
+```{r}
+ggplot(prepost, aes(x = time, y = perf)) +
+  geom_boxplot() +
+  geom_jitter(width = 0.1) +
+  labs(
+    title = "Performance Before and After Rehabilitation",
+    x = "Time",
+    y = "Performance"
+  )
+```
+
+```{r}
+prepost
+```
+
+```{r}
+before <- prepost$perf[prepost$time == "Before"]
+after <- prepost$perf[prepost$time == "After"]
+
+difference <- after - before
+
+difference
+```
+
+```{r}
+shapiro.test(difference)
+```
+
+A paired t-test was used because the same participants were measured before and after rehabilitation. The distribution of the paired differences did not show evidence of departure from normality according to the Shapiro-Wilk test (p = 0.283).
+
+```{r}
+t.test(after, before, paired = TRUE)
+```
+
+The paired t-test showed a statistically significant increase in performance after rehabilitation (t(7) = 5.40, p = 0.001). Performance increased by an average of 2.5 units, with a 95% confidence interval from 1.41 to 3.59 units. These results suggest that performance improved after the rehabilitation program.
+
