@@ -17,3 +17,5 @@ format:
 ### Make clear what is a statistical test, and when to use it.
 
 **What is a median? A mean?** The mean is the sum of all values divided by their number, and the median is the middle value once the data are sorted. *Reference: Field, A. (2013). Discovering Statistics Using IBM SPSS Statistics, Chapter 2.*
+
+**What is a variance? A standard deviation?** The variance is the average squared deviation from the mean, and the standard deviation is its square root, expressed in the same unit as the data. *Reference: Field, A. (2013). Discovering Statistics Using IBM SPSS Statistics, Chapter 2.*
