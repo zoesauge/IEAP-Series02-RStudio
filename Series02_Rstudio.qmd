@@ -1,0 +1,39 @@
+---
+title: "IEAP - Rstudio Series 02: Upper Limb Non-Use after Stroke"
+author: "Zoe Sauge"
+date: last-modified
+date-format: "DD MMMM YYYY, HH:mm:ss"
+format:
+  typst:
+    papersize: a4
+    margin:
+      x: 1.5cm
+      y: 1.2cm
+    fontsize: 9.5pt
+---
+
+## Statistical tests: comparison of medians (or means?)
+
+### Make clear what is a statistical test, and when to use it.
+
+**What is a median? A mean?** The mean is the sum of all values divided by their number, and the median is the middle value once the data are sorted. *Reference: Field, A. (2013). Discovering Statistics Using IBM SPSS Statistics, Chapter 2.*
+
+**What is a variance? A standard deviation?** The variance is the average squared deviation from the mean, and the standard deviation is its square root, expressed in the same unit as the data. *Reference: Field, A. (2013). Discovering Statistics Using IBM SPSS Statistics, Chapter 2.*
+
+**What is a normal distribution?** A normal distribution is a symmetric, bell-shaped distribution in which most values cluster around the mean. *Reference: STHDA - Normality Test in R*
+
+**What is a statistical test?** A statistical test uses sample data to decide whether there is enough evidence to reject a null hypothesis, by computing a p-value. *Reference: STHDA - Statistical Tests and Assumptions*
+
+**When to use a statistical test?** A statistical test is used to know whether a result observed on a sample is likely real or due to random sampling variation. *Reference: STHDA - Statistical Tests and Assumptions*
+
+**What is a parametric test? A non-parametric test?** A parametric test assumes a specific distribution of the data (usually normal), whereas a non-parametric test makes no such assumption and typically works on ranks. *Reference: STHDA - Non-parametric Tests*
+
+**What are the assumptions of parametric tests?** Parametric tests generally assume normally distributed data, independent observations and, for group comparisons, equal variances. *Reference: Field, A. (2013). Discovering Statistics Using IBM SPSS Statistics, Chapter 5.*
+
+**What are the assumptions of non-parametric tests?** Non-parametric tests mainly assume independent observations and data that can be ranked. *Reference: STHDA - Non-parametric Tests*
+
+**What is a p-value?** The p-value is the probability of obtaining a result at least as extreme as the one observed if the null hypothesis is true. *Reference: STHDA - Statistical Tests and Assumptions*
+
+**What is the risk of error when using a statistical test?** A Type I error is a false positive (risk usually set at α = 0.05), and a Type II error is a false negative, often due to low statistical power. *Reference: Field, A. (2013). Discovering Statistics Using IBM SPSS Statistics, Chapter 2.*
+
+**What is the difference between a paired and an unpaired test?** A paired test compares two measurements from the same subjects, whereas an unpaired test compares two independent groups. *Reference: STHDA - t-test Formula*
