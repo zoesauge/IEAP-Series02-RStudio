@@ -98,3 +98,10 @@ shapiro.test(difference)
 ```
 
 A paired t-test was used because the same participants were measured before and after rehabilitation. The distribution of the paired differences did not show evidence of departure from normality according to the Shapiro-Wilk test (p = 0.283).
+
+```{r}
+t.test(after, before, paired = TRUE)
+```
+
+The paired t-test showed a statistically significant increase in performance after rehabilitation (t(7) = 5.40, p = 0.001). Performance increased by an average of 2.5 units, with a 95% confidence interval from 1.41 to 3.59 units. These results suggest that performance improved after the rehabilitation program.
+
