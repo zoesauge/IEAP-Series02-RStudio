@@ -66,3 +66,16 @@ The dataset contains 16 observations: 8 measurements before rehabilitation and 8
 |---------------|---------------|---------------|---------------|---------------|
 | perf | Cardiac rehabilitation performance score; the exact test/measure is not specified in the assignment materials | Not specified (likely arbitrary or composite score) | 125–148 observed in this dataset | Expected to improve after rehabilitation |
 | time | Measurement period | Categorical | Before / After | Not applicable |
+
+### 2.2.2 The analysis
+
+```{r}
+ggplot(prepost, aes(x = time, y = perf)) +
+  geom_boxplot() +
+  geom_jitter(width = 0.1) +
+  labs(
+    title = "Performance Before and After Rehabilitation",
+    x = "Time",
+    y = "Performance"
+  )
+```
